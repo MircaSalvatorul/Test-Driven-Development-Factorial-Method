@@ -1,0 +1,19 @@
+var assert = require("assert");
+var Calculate = require("../index.js");
+
+describe("Calculate", () => {
+  describe(".factorial", () => {
+    it("outputs the result of 5 factorial", () => {
+      const entry = 5;
+      const expected =120;
+      const result = Calculate.factorial(entry);
+      assert.equal(result,expected);
+    });
+    it("outputs the result of 3!",()=>{
+      const entry = 3;
+      const expected =6;
+      const result = Calculate.factorial(entry);
+      assert.equal(result,expected);
+    })
+  });
+});
